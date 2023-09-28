@@ -11,7 +11,7 @@ Ram::Ram() {
 	size = 100 * 1024;
 }
 Ram::~Ram() {
-	cout << "¸Þ¸ð¸® Á¦°ÅµÊ" << endl;
+	cout << "메모리 초기화 완료" << endl;
 }
 char Ram::read(int address) {
 	return mem[address];
