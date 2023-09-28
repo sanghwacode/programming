@@ -2,7 +2,7 @@
 #define RAM_H
 
 class Ram {
-	char mem[100 * 1024];
+	char tmp[100 * 1024];
 	int size;
 public:
 	Ram();
