@@ -5,10 +5,9 @@
 using namespace std;
 
 Ram::Ram() {
-	for (int i = 0; i < 100 * 1024; i++) {
+	for (int i = 0; i < size; i++) {
 		tmp[i] = 0;
 	}
-	size = 100 * 1024;
 }
 Ram::~Ram() {
 	cout << "메모리 초기화 완료" << endl;
