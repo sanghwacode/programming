@@ -8,7 +8,7 @@ int main() {
 	ram.write(11, 101);
 	char res = ram.read(10) + ram.read(11);
 	ram.write(12, res);
-	cout << "12번째 메모리의 값 = " << (int)ram.read(102) << endl;
+	cout << "12번째 메모리의 값 = " << (int)ram.read(12) << endl;
 
 	return 0;
 }
