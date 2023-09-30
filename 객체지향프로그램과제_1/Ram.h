@@ -1,14 +1,12 @@
-#ifndef RAM_H
-#define RAM_H
-
-class Ram {
-	char tmp[100 * 1024];
-	int size;
+#ifndef INFC___RAM_H
+#define INFC___RAM_H
+class Ram{
+    char mem[100 * 1024];
+    int size;
 public:
-	Ram();
-	~Ram();
-	char read(int address);
-	void write(int address, char value);
+    Ram();
+    ~Ram();
+    char read(int address);
+    void write(int address, char value);
 };
-
-#endif
+#endif //INFC___RAM_H
