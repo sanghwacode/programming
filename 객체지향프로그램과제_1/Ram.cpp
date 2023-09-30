@@ -1,20 +1,20 @@
-#include <iostream>
-#include <string>
 #include "Ram.h"
-
-using namespace std;
+#include <iostream>
 
 Ram::Ram() {
-	for (int i = 0; i < size; i++) {
-		tmp[i] = 0;
-	}
+    size = 100 * 1024;
+    for(int i = 0; i < size; i++)
+    {
+        mem[i] = 0;
+    }
 }
 Ram::~Ram() {
-	cout << "메모리 초기화 완료" << endl;
-}
-char Ram::read(int address) {
-	return mem[address];
+    std::cout << "메모리 제거됨" << std::endl;
 }
 void Ram::write(int address, char value) {
-	tmp[address] = value;
+    mem[address] = value;
+}
+
+char Ram::read(int address) {
+    return mem[address];
 }
